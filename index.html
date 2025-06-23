@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MS SimpleBooking - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="assets/logo.png" alt="MS SimpleBooking Logo">
+      <h1>MS SimpleBooking</h1>
+    </div>
+  </header>
+  <main class="login-container">
+    <form id="login-form">
+      <h2>Login</h2>
+      <div class="form-group">
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Passwort:</label>
+        <input type="password" id="password" required>
+      </div>
+      <button type="submit">Login</button>
+      <p class="switch-form">Noch kein Konto? <a href="#register" id="show-register">Hier registrieren</a></p>
+    </form>
+
+    <form id="register-form" class="hidden">
+      <h2>Registrieren</h2>
+      <div class="form-group">
+        <label for="reg-email">E-Mail:</label>
+        <input type="email" id="reg-email" required>
+      </div>
+      <div class="form-group">
+        <label for="reg-password">Passwort:</label>
+        <input type="password" id="reg-password" required>
+      </div>
+      <button type="submit">Registrieren</button>
+      <p class="switch-form">Bereits ein Konto? <a href="#login" id="show-login">Zum Login</a></p>
+    </form>
+  </main>
+  <script src="dummy_users.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
