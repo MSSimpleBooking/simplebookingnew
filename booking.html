@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MS SimpleBooking - Buchung</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="assets/logo.png" alt="MS SimpleBooking Logo">
+      <h1>MS SimpleBooking</h1>
+    </div>
+  </header>
+  <main>
+    <form id="booking-form">
+      <h2>Meetingpauschale buchen</h2>
+      <p>Wähle die gewünschten Monate aus:</p>
+      <div class="month-selector">
+        <!-- Einzelne Monate -->
+        <label><input type="checkbox" value="Januar"> Januar</label>
+        <label><input type="checkbox" value="Februar"> Februar</label>
+        <label><input type="checkbox" value="März"> März</label>
+        <label><input type="checkbox" value="April"> April</label>
+        <label><input type="checkbox" value="Mai"> Mai</label>
+        <label><input type="checkbox" value="Juni"> Juni</label>
+        <label><input type="checkbox" value="Juli"> Juli</label>
+        <label><input type="checkbox" value="August"> August</label>
+        <label><input type="checkbox" value="September"> September</label>
+        <label><input type="checkbox" value="Oktober"> Oktober</label>
+        <label><input type="checkbox" value="November"> November</label>
+        <label><input type="checkbox" value="Dezember"> Dezember</label>
+      </div>
+      <button type="submit">Buchen</button>
+    </form>
+
+    <div id="invoice-section" class="hidden">
+      <h2>Buchung erfolgreich!</h2>
+      <p>Hier ist deine Rechnung:</p>
+      <button id="download-invoice">Rechnung herunterladen</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
